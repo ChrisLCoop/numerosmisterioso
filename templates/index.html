@@ -1,0 +1,15 @@
+<h1>Adivina el Numero Secreto</h1>
+<br/>
+<form method="POST">
+    Ingrese un posible numero:
+    <input type="text" name="posible_numero" value="0"/>
+    <input type="submit" value="Adivinar ?"/>
+</form>
+
+<h5>**La respuesta está entre el 0 y el 10</h5>
+
+{% if numero_respuesta == 5 %}
+
+<h3>EL numero de respuesta es {{numero_respuesta}}</h3>
+
+{% endif %}
